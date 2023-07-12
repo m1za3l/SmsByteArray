@@ -12,31 +12,5 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    fun onButtonSendClicked(view: View){
-        val destinationAddress: String = "5627392680"
 
-
-        try {
-
-            val pdu = "hola"
-            val bytes = pdu.toByteArray()
-            var i=0
-            for (byte in bytes)
-                Log.v("m1m1"," ${i++} | byte : ${byte}")
-
-            Log.v("m1m1"," decode : ${bytes.decodeToString()}")
-
-
-            SmsManager.getDefault().sendDataMessage(
-                destinationAddress,
-                null,
-                2948,
-                bytes,
-                null,
-                null
-            )
-        } catch (e: Exception) {
-            e.printStackTrace()
-        }
-    }
 }
