@@ -29,11 +29,19 @@
         android:layout_height="wrap_content"
         android:text="enviar" />
 
+
+    <TextView
+        android:paddingTop="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="mensaje recibido" />
+
     <TextView
         android:paddingTop="10dp"
         android:layout_marginTop="20dp"
         android:id="@+id/txt_recibe"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="txt" />
+        android:text="" />
 </LinearLayout>

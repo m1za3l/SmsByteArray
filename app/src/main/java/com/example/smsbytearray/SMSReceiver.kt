@@ -10,10 +10,12 @@ import android.widget.Toast
 
 class SMSReceiver : BroadcastReceiver(){
 
+    private val SMS_RECEIVED = "android.provider.Telephony.SMS_RECEIVED"
 
-        override fun onReceive(context: Context?, intent: Intent) {
+    override fun onReceive(context: Context?, intent: Intent) {
             Log.d("m1m1m1", "onReceive")
-
+            if (intent.getAction().equals(SMS_RECEIVED)) {
+            }
 
             val message = Telephony.Sms.Intents.getMessagesFromIntent(intent)
             val content =  message[0].displayMessageBody

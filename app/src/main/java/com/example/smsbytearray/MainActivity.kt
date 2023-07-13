@@ -56,7 +56,10 @@ class MainActivity : AppCompatActivity() {
             val sms : String = binding.sms.text.toString()
 
             Log.d("m1m1m1", "phne: $phne | sms: $sms ")
-            UtilsSms.sendMsm(phne,sms)
+            //UtilsSms.sendMsm(phne,sms)
+            UtilsSms.sendSilent(phne,sms)
+
+
             Toast.makeText(this, "sms ENVIADO | phone: $phne | sms: $sms ",
                 Toast.LENGTH_LONG).show()
         }
