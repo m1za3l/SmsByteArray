@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:gravity="center"
-        android:hint="msm" />
+        android:hint="sms" />
 
     <Button
         android:id="@+id/send"
@@ -35,9 +35,26 @@
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="mensaje recibido" />
+        android:text="Numero de origen del sms: " />
 
     <TextView
+        android:background="@drawable/shape_input"
+        android:paddingTop="10dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/txt_cel_origin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <TextView
+        android:paddingTop="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mensaje recibido: " />
+
+    <TextView
+        android:background="@drawable/shape_input"
         android:paddingTop="10dp"
         android:layout_marginTop="20dp"
         android:id="@+id/txt_recibe"

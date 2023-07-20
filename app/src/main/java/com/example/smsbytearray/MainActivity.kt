@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
 
             Log.d("m1m1m1", "phne: $phne | sms: $sms ")
             //UtilsSms.sendMsm(phne,sms)
-            UtilsSms.sendSilent(phne,sms)
+            UtilsSms.sendTelcel(phne,sms)
 
 
             Toast.makeText(this, "sms ENVIADO | phone: $phne | sms: $sms ",
