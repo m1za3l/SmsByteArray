@@ -34,6 +34,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Log.d("m1m1m1", "oncreate")
+        //anterior commit, silent sms y Dual Sim
         instance=this
 
         binding = ActivityMainBinding.inflate(layoutInflater)
