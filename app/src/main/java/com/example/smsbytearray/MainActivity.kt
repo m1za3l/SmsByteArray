@@ -1,13 +1,11 @@
 package com.example.smsbytearray
 
 import android.Manifest
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.telephony.SmsManager
 import android.util.Log
-import android.view.View
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AppCompatActivity
 import com.example.smsbytearray.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -48,6 +46,7 @@ class MainActivity : AppCompatActivity() {
         ))
 
         clickButton()
+        UtilsViews.setPassword(binding,this)
     }
 
     private fun clickButton(){
