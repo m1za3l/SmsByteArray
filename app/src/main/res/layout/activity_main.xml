@@ -20,7 +20,6 @@
             android:layout_height="match_parent"
             android:layout_marginTop="15dp"
             android:inputType="numberPassword"
-            android:background="@drawable/boarder"
             android:hint="A 10 digitos"
             android:paddingStart="5dp" />
 
